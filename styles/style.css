@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  font-family: "Open Sans", sans-serif;
+}
+.wrapper .hero-wrapper {
+  height: 344px;
+  background-image: url(../assets/BlackSummer-main.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper .hero-wrapper .content {
+  padding-left: 12.5px;
+}
+.wrapper .hero-wrapper .header {
+  height: 4.063em;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.801218);
+}
+.wrapper .hero-wrapper .header .menu-mobile {
+  height: 100vh;
+  width: 218px;
+  background-color: black;
+  position: fixed;
+  top: 4.03em;
+  left: -218px;
+}
+.wrapper .hero-wrapper .header .menu-mobile.active {
+  left: 0;
+}
+.wrapper .hero-wrapper .header .menu-mobile .toggle-btn {
+  position: absolute;
+  top: -53px;
+  left: 238px;
+  cursor: pointer;
+}
+.wrapper .hero-wrapper .header .menu-mobile .toggle-btn.active {
+  left: 20px;
+}
+.wrapper .hero-wrapper .header .menu-mobile .toggle-btn .hamburger-icon {
+  width: 35px;
+  text-align: center;
+  font-size: 30px;
+}
+.wrapper .hero-wrapper .header .menu-mobile .menu-li {
+  padding: 24px 0 0 13px;
+  list-style: none;
+}
+.wrapper .hero-wrapper .header .menu-mobile .menu-li li {
+  padding-bottom: 20px;
+}
+.wrapper .hero-wrapper .header .menu-mobile .menu-li li a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  cursor: pointer;
+}
+.wrapper .hero-wrapper .header .menu-mobile .menu-li li a:hover {
+  font-weight: bold;
+}
+.wrapper .hero-wrapper .header .header-content {
+  width: 80%;
+}
+.wrapper .hero-wrapper .header .header-content .logo-wrapper {
+  height: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 68px;
+}
+.wrapper .hero-wrapper .header .header-content .logo-wrapper .logo-img {
+  width: 8.12em;
+  height: auto;
+}
+.wrapper .hero-wrapper .header .header-content .menu-desktop {
+  display: none;
+}
+.wrapper .hero-wrapper .hero-content {
+  padding-top: 123px;
+}
+.wrapper .hero-wrapper .hero-content .main-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 33px;
+  letter-spacing: 0.5px;
+}
+.wrapper .hero-wrapper .hero-content .subtitle {
+  font-size: 1em;
+  line-height: 22px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.wrapper .hero-wrapper .hero-content .subtitle .sub {
+  margin-right: 10px;
+}
+.wrapper .hero-wrapper .hero-content .subtitle .sub.age {
+  border: solid 1px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.123);
+  padding: 0 6px;
+  text-align: center;
+}
+.wrapper .hero-wrapper .hero-content .dsk-titles {
+  display: none;
+}
+.wrapper .hero-wrapper .hero-content .btn-wrapper {
+  margin-top: 25px;
+}
+.wrapper .hero-wrapper .hero-content .btn-wrapper .main-button {
+  padding: 14px 22px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.wrapper .hero-wrapper .hero-content .btn-wrapper .main-button.play-btn {
+  background-color: #ed0a1d;
+  margin-right: 4px;
+}
+.wrapper .hero-wrapper .hero-content .btn-wrapper .main-button.list-btn {
+  background-color: rgba(157, 151, 151, 0.541521);
+}
+.wrapper .hero-wrapper .rectangle {
+  height: 107px;
+  width: auto;
+  background-color: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
+  transform: rotate(-180deg);
+}
+
+/*# sourceMappingURL=style.css.map */
