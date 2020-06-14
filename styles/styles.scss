@@ -5,21 +5,32 @@
     color: #ffffff;
 }
 
+body {
+    background-color: #000000;
+}
 .wrapper {
     width: 100%;
     height: auto;
     font-family: 'Open Sans', sans-serif;
 
+    .content {
+        padding-left: 12.5px;
+    }
+
+    .content-titles {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 25px;
+    }
+
     .hero-wrapper {
         height: 344px;
+        min-height: 60vh;
         background-image: url(../assets/BlackSummer-main.png);
-        background-position: top;;
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         
-        .content {
-            padding-left: 12.5px;
-        }
         .header {
             height: 4.063em;
             width: 100%;
@@ -103,7 +114,7 @@
         }
 
         .hero-content {
-            padding-top: 123px;
+            padding-top: 153px;
 
             .main-title {
                 font-size: 1.5em;
@@ -136,7 +147,7 @@
             }
 
             .btn-wrapper {
-                margin-top: 25px;
+                margin-top: 35px;
 
                 .main-button {
                     padding: 14px 22px;
@@ -161,8 +172,33 @@
         .rectangle {
             height: 107px;
             width: auto;
-            background-color: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
+            background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
             transform: rotate(-180deg);
         }
+    }
+
+    .series-wrapper {
+        background-color: black;
+        position: relative;
+        top: -80px;
+
+        .carousel-wrapper {
+            
+            .series-title {
+                padding: 25px 0 15px;
+            }
+
+            .carousel-series {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+    
+                .serie-div {
+                    scroll-snap-align: start;
+                }
+    
+            }
+        }
+
     }
 }
