@@ -180,7 +180,7 @@ body {
     .series-wrapper {
         background-color: black;
         position: relative;
-        top: -80px;
+        top: -50px;
 
         .carousel-wrapper {
             
@@ -195,6 +195,15 @@ body {
     
                 .serie-div {
                     scroll-snap-align: start;
+
+                    .serie-link {
+
+                        .serie-img {
+                            height: 124px;
+                            width: auto;
+                            margin-right: 13px;
+                        }
+                    }
                 }
     
             }
