@@ -24,7 +24,6 @@ body {
 }
 .wrapper .hero-wrapper {
   height: 344px;
-  min-height: 60vh;
   background-image: url(../assets/BlackSummer-main.png);
   background-position: center;
   background-size: cover;
@@ -74,8 +73,8 @@ body {
 }
 .wrapper .hero-wrapper .header .menu-mobile .menu-li li a {
   text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1em;
+  line-height: 35px;
   cursor: pointer;
 }
 .wrapper .hero-wrapper .header .menu-mobile .menu-li li a:hover {
@@ -143,16 +142,17 @@ body {
 .wrapper .hero-wrapper .hero-content .btn-wrapper .main-button.list-btn {
   background-color: rgba(157, 151, 151, 0.541521);
 }
-.wrapper .hero-wrapper .rectangle {
+.wrapper .rectangle {
   height: 107px;
   width: auto;
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
-  transform: rotate(-180deg);
+  background: linear-gradient(0deg, black 36%, rgba(0, 0, 0, 0) 100%);
+  margin-top: -70px;
 }
 .wrapper .series-wrapper {
-  background-color: black;
-  position: relative;
-  top: -50px;
+  margin-top: -70px;
+}
+.wrapper .series-wrapper .carousel-wrapper:last-child {
+  margin-bottom: 35px;
 }
 .wrapper .series-wrapper .carousel-wrapper .series-title {
   padding: 25px 0 15px;
@@ -164,11 +164,48 @@ body {
 }
 .wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div {
   scroll-snap-align: start;
+  text-align: center;
+  margin-right: 13px;
 }
 .wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div .serie-link .serie-img {
   height: 124px;
   width: auto;
-  margin-right: 13px;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey {
+  width: 95%;
+  height: 3.5px;
+  margin-top: 10px;
+  background-color: #858585;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red {
+  height: 3.5px;
+  background-color: #C60F0E;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-1 {
+  width: 60%;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-2 {
+  width: 10%;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-3 {
+  width: 50%;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-4 {
+  width: 70%;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-5 {
+  width: 30%;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-6 {
+  width: 80%;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-7 {
+  width: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */

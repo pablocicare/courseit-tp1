@@ -18,30 +18,30 @@
                     </div>
 
                     <ul class="menu-li">
-                        <li><a href="#" class="li-btn">Inicio</a></li>
-                        <li><a href="#" class="li-btn">Series</a></li>
-                        <li><a href="#" class="li-btn">Películas</a></li>
-                        <li><a href="#" class="li-btn">Agregados recientemente</a></li>
-                        <li><a href="#" class="li-btn">Mi lista</a></li>
+                        <li><a href="#home" class="li-btn">Inicio</a></li>
+                        <li><a href="#series" class="li-btn">Series</a></li>
+                        <li><a href="#continue" class="li-btn">Continuar viendo</a></li>
+                        <li><a href="#last" class="li-btn">Agregados recientemente</a></li>
+                        <li><a href="#list" class="li-btn">Mi lista</a></li>
                     </ul>
                 </div>
 
                 <div class="header-content content">
-                    <a href="" class="logo-wrapper">
+                    <a href="#home" class="logo-wrapper">
                         <img src="./assets/Courflix-Logo.png" alt="Courflix" class="logo-img">
                     </a>
 
                     <nav class="menu-desktop">
                         <a href="" class="nav-link">Inicio</a>
                         <a href="" class="nav-link">Series</a>
-                        <a href="" class="nav-link">Películas</a>
+                        <a href="" class="nav-link">Continuar viendo</a>
                         <a href="" class="nav-link">Agregados recientemente</a>
                         <a href="" class="nav-link">Mi lista</a>
                     </nav>
                 </div>
             </header>
 
-            <div class="hero-content content">
+            <div class="hero-content content" id="home">
                 <h3 class="content-titles dsk-titles">Original de COURFLIX</h3>
                 <h1 class="main-title">BLACK SUMMER</h1>
                 <div class="mbl-subtitle subtitle">
@@ -59,13 +59,13 @@
                 <h4 class="subtitle dsk-titles">Ve la temporada 1</h4>
                 <p class="main-description dsk-titles">Una ansiada luna de miel. Un asesinato terrible. varios sospechosos. Si sobreviven, serán unas vacaciones de ensueño.</p>
             </div>
-
-            <div class="rectangle"></div>
         </div>
+        
+        <div class="rectangle"></div>
 
         <div class="series-wrapper">
             <div class="carousel-wrapper content">
-                <h3 class="content-titles series-title">Series</h3>
+                <h3 class="content-titles series-title" id="series">Series</h3>
                 <div class="carousel-series">
                     <div class="serie-div">
                         <a href="#" class="serie-link">
@@ -108,58 +108,81 @@
                             <img src="./assets/Dark.png" alt="" class="serie-img">
                         </a>
                     </div>
-
                 </div>
             </div>
+            
             <div class="carousel-wrapper content">
-                <h3 class="content-titles series-title">Continuar viendo</h3>
+                <h3 class="content-titles series-title" id="continue">Continuar viendo</h3>
+                
                 <div class="carousel-series">
-                    <div class="serie-div">
+                    
+                    <div class="serie-div process-div">
                         <a href="#" class="serie-link">
                             <img src="./assets/Vikings.png" alt="Vikings" class="serie-img">
                         </a>
+                        <div class="process-grey">
+                            <div class="process-red red-1"></div>
+                        </div>
                     </div>
 
-                    <div class="serie-div">
+                    <div class="serie-div process-div">
                         <a href="#" class="serie-link">
                             <img src="./assets/Dark.png" alt="Dark" class="serie-img">
                         </a>
+                        <div class="process-grey">
+                            <div class="process-red red-2"></div>
+                        </div>
                     </div>
 
-                    <div class="serie-div">
+                    <div class="serie-div process-div">
                         <a href="#" class="serie-link">
                             <img src="./assets/Orden.png" alt="La Orden Secreta" class="serie-img">
                         </a>
+                        <div class="process-grey">
+                            <div class="process-red red-3"></div>
+                        </div>
                     </div>
 
-                    <div class="serie-div">
+                    <div class="serie-div process-div">
                         <a href="#" class="serie-link">
                             <img src="./assets/TheEnd.png" alt="The End Of The Fucking World" class="serie-img">
                         </a>
+                        <div class="process-grey">
+                            <div class="process-red red-4"></div>
+                        </div>
                     </div>
 
-                    <div class="serie-div">
+                    <div class="serie-div process-div">
                         <a href="#" class="serie-link">
                             <img src="./assets/LoveDeath.png" alt="Love Death and Robots" class="serie-img">
                         </a>
+                        <div class="process-grey">
+                            <div class="process-red red-5"></div>
+                        </div>
                     </div>
 
-                    <div class="serie-div">
+                    <div class="serie-div process-div">
                         <a href="#" class="serie-link">
                             <img src="./assets/TheProtector.png" alt="The Protector" class="serie-img">
                         </a>
+                        <div class="process-grey">
+                            <div class="process-red red-6"></div>
+                        </div>
                     </div>
 
-                    <div class="serie-div">
+                    <div class="serie-div process-div">
                         <a href="#" class="serie-link">
                             <img src="./assets/Lucifer.png" alt="Lucifer" class="serie-img">
                         </a>
+                        <div class="process-grey">
+                            <div class="process-red red-7"></div>
+                        </div>
                     </div>
-
                 </div>
             </div>
+
             <div class="carousel-wrapper content">
-                <h3 class="content-titles series-title">Agregados recientemente</h3>
+                <h3 class="content-titles series-title" id="last">Agregados recientemente</h3>
                 <div class="carousel-series">
                     <div class="serie-div">
                         <a href="#" class="serie-link">
@@ -204,10 +227,55 @@
                     </div>
 
                 </div>
-            </div>  
+            </div>
+            
+            <div class="carousel-wrapper content">
+                <h3 class="content-titles series-title" id="list">Mi lista</h3>
+                <div class="carousel-series">
+                    <div class="serie-div">
+                        <a href="#" class="serie-link">
+                            <img src="./assets/SevenDeadly.png" alt="Seven Deadly Sins" class="serie-img">
+                        </a>
+                    </div>
+
+                    <div class="serie-div">
+                        <a href="#" class="serie-link">
+                            <img src="./assets/Lucifer.png" alt="Lucifer" class="serie-img">
+                        </a>
+                    </div>
+
+                    <div class="serie-div">
+                        <a href="#" class="serie-link">
+                            <img src="./assets/TheProtector.png" alt="The Protector" class="serie-img">
+                        </a>
+                    </div>
+
+                    <div class="serie-div">
+                        <a href="#" class="serie-link">
+                            <img src="./assets/LoveDeath.png" alt="" class="serie-img">
+                        </a>
+                    </div>
+
+                    <div class="serie-div">
+                        <a href="#" class="serie-link">
+                            <img src="./assets/TheEnd.png" alt="The End Of The Fucking World" class="serie-img">
+                        </a>
+                    </div>
+
+                    <div class="serie-div">
+                        <a href="#" class="serie-link">
+                            <img src="./assets/Orden.png" alt="La Orden Secreta" class="serie-img">
+                        </a>
+                    </div>
+
+                    <div class="serie-div">
+                        <a href="#" class="serie-link">
+                            <img src="./assets/Dark.png" alt="" class="serie-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
     </div>
 
     <script src="./js/index.js"></script>
