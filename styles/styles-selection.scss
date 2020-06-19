@@ -7,6 +7,8 @@
 
 body {
     background-color: #000000;
+    font-family: 'Open Sans', sans-serif;
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -14,7 +16,6 @@ body {
 .wrapper {
     width: 100%;
     height: auto;
-    font-family: 'Open Sans', sans-serif;
 
     .content {
         padding-left: 13px;
@@ -28,7 +29,7 @@ body {
 
     .hero-wrapper {
         height: 344px;
-        background-image: url(../assets/BlackSummer-main.png);
+        background-image: url(../assets/breakingbad.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -189,95 +190,21 @@ body {
         background: linear-gradient(0deg, black 36%, rgba(0, 0, 0, 0) 100%);;
         margin-top: -70px;
     }
-    
+
     .series-wrapper {
-        background-color: #000000;
-        margin-top: -70px;
-        
-        .carousel-wrapper {
 
-            &:last-child {
-                margin-bottom: 35px;
-            }
-            
-            .series-title {
-                padding: 25px 0 15px;
-            }
+        .chapter-wrapper {
+            display: flex;
 
-            .carousel-series {
-                display: flex;
-                overflow-x: auto;
-                scroll-snap-type: x mandatory;
+            .chapter-img {
+                width: 131px;
+                height: 75px;
                 
-                &::-webkit-scrollbar {
-                    display: none;
-                }
-
-                
-                
-                .serie-div {
-                    scroll-snap-align: start;
-                    text-align: center;
-                    margin-right: 13px;
-
-                    .serie-link {
-                        
-                        .serie-img {
-                            height: 124px;
-                            width: auto;
-                        }
-                    }
-                    
-                    &.process-div {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-
-                        .process-grey {
-                            width: 100%;
-                            max-width: 95%;
-                            height: 3px;
-                            margin-top: 10px;
-                            background-color: #858585;
-
-                            .process-red {
-                                height: 3px;
-                                background-color: #C60F0E;
-
-                                &.red-1 {
-                                    width: 60%;
-                                }
-
-                                &.red-2 {
-                                    width: 10%;
-                                }
-
-                                &.red-3 {
-                                    width: 50%;
-                                }
-
-                                &.red-4 {
-                                    width: 70%;
-                                }
-
-                                &.red-5 {
-                                    width: 30%;
-                                }
-
-                                &.red-6 {
-                                    width: 80%;
-                                }
-
-                                &.red-7 {
-                                    width: 20%;
-                                }
-                            }
-                        }
-                    }
-
+                &.img-1 {
+                    background-image: url(../assets/brba-1.png);
+                    background-position: center;
                 }
             }
         }
-
     }
 }

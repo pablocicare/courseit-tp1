@@ -7,6 +7,7 @@
 
 body {
   background-color: #000000;
+  font-family: "Open Sans", sans-serif;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -15,7 +16,6 @@ body::-webkit-scrollbar {
 .wrapper {
   width: 100%;
   height: auto;
-  font-family: "Open Sans", sans-serif;
 }
 .wrapper .content {
   padding-left: 13px;
@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
 }
 .wrapper .hero-wrapper {
   height: 344px;
-  background-image: url(../assets/BlackSummer-main.png);
+  background-image: url(../assets/breakingbad.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -159,69 +159,16 @@ body::-webkit-scrollbar {
   background: linear-gradient(0deg, black 36%, rgba(0, 0, 0, 0) 100%);
   margin-top: -70px;
 }
-.wrapper .series-wrapper {
-  background-color: #000000;
-  margin-top: -70px;
-}
-.wrapper .series-wrapper .carousel-wrapper:last-child {
-  margin-bottom: 35px;
-}
-.wrapper .series-wrapper .carousel-wrapper .series-title {
-  padding: 25px 0 15px;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series {
+.wrapper .series-wrapper .chapter-wrapper {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
 }
-.wrapper .series-wrapper .carousel-wrapper .carousel-series::-webkit-scrollbar {
-  display: none;
+.wrapper .series-wrapper .chapter-wrapper .chapter-img {
+  width: 131px;
+  height: 75px;
 }
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div {
-  scroll-snap-align: start;
-  text-align: center;
-  margin-right: 13px;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div .serie-link .serie-img {
-  height: 124px;
-  width: auto;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey {
-  width: 100%;
-  max-width: 95%;
-  height: 3px;
-  margin-top: 10px;
-  background-color: #858585;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red {
-  height: 3px;
-  background-color: #C60F0E;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-1 {
-  width: 60%;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-2 {
-  width: 10%;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-3 {
-  width: 50%;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-4 {
-  width: 70%;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-5 {
-  width: 30%;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-6 {
-  width: 80%;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-7 {
-  width: 20%;
+.wrapper .series-wrapper .chapter-wrapper .chapter-img.img-1 {
+  background-image: url(../assets/brba-1.png);
+  background-position: center;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-selection.css.map */
