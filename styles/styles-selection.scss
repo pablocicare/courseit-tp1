@@ -170,18 +170,9 @@ body {
                             background-color: #d6091a;
                         }
                     }
-                    
-                    &.list-btn {
-                        background-color: rgba(157, 151, 151, 0.541521);
-
-                        &:hover {
-                            background-color: rgba(136, 132, 132, 0.542);
-                        }
-                    }
                 }
             }
         }
-        
     }
     
     .rectangle {
@@ -195,14 +186,49 @@ body {
 
         .chapter-wrapper {
             display: flex;
+            align-items: flex-start;;
+            padding-right: 22px;
+            line-height: 1.4em;
+            padding-bottom: 15px;
+            
+            .process-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-right: 10px;
+
+                .process-grey {
+                    width: 100%;
+                    max-width: 95%;
+                    height: 3px;
+                    margin-top: 10px;
+                    background-color: #858585;
+
+                    .process-red {
+                        width: 60%;
+                        height: 3px;
+                        background-color: #C60F0E;
+                    }
+                }
+            }
 
             .chapter-img {
                 width: 131px;
                 height: 75px;
+                cursor: pointer;
+            }
+            
+
+            
+            .chapter-info {
+                .chapter-title {
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding-bottom: 2px;
+                }
                 
-                &.img-1 {
-                    background-image: url(../assets/brba-1.png);
-                    background-position: center;
+                .chapter-desc {
+                    font-size: 15px;
                 }
             }
         }

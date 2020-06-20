@@ -147,12 +147,6 @@ body::-webkit-scrollbar {
 .wrapper .hero-wrapper .hero-content .btn-wrapper .main-button.play-btn:hover {
   background-color: #d6091a;
 }
-.wrapper .hero-wrapper .hero-content .btn-wrapper .main-button.list-btn {
-  background-color: rgba(157, 151, 151, 0.541521);
-}
-.wrapper .hero-wrapper .hero-content .btn-wrapper .main-button.list-btn:hover {
-  background-color: rgba(136, 132, 132, 0.542);
-}
 .wrapper .rectangle {
   height: 107px;
   width: 100%;
@@ -161,14 +155,41 @@ body::-webkit-scrollbar {
 }
 .wrapper .series-wrapper .chapter-wrapper {
   display: flex;
+  align-items: flex-start;
+  padding-right: 22px;
+  line-height: 1.4em;
+  padding-bottom: 15px;
+}
+.wrapper .series-wrapper .chapter-wrapper .process-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 10px;
+}
+.wrapper .series-wrapper .chapter-wrapper .process-div .process-grey {
+  width: 100%;
+  max-width: 95%;
+  height: 3px;
+  margin-top: 10px;
+  background-color: #858585;
+}
+.wrapper .series-wrapper .chapter-wrapper .process-div .process-grey .process-red {
+  width: 60%;
+  height: 3px;
+  background-color: #C60F0E;
 }
 .wrapper .series-wrapper .chapter-wrapper .chapter-img {
   width: 131px;
   height: 75px;
+  cursor: pointer;
 }
-.wrapper .series-wrapper .chapter-wrapper .chapter-img.img-1 {
-  background-image: url(../assets/brba-1.png);
-  background-position: center;
+.wrapper .series-wrapper .chapter-wrapper .chapter-info .chapter-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+.wrapper .series-wrapper .chapter-wrapper .chapter-info .chapter-desc {
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style-selection.css.map */
