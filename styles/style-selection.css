@@ -61,7 +61,7 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 .wrapper .hero-wrapper .header .menu-mobile .toggle-btn.active {
-  left: 20px;
+  left: 13px;
 }
 .wrapper .hero-wrapper .header .menu-mobile .toggle-btn .hamburger-icon {
   width: 35px;
@@ -165,6 +165,18 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   padding-right: 10px;
+  position: relative;
+}
+.wrapper .series-wrapper .chapter-wrapper .process-div .fa-play-circle {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.541);
+  font-size: 40px;
+  font-weight: 100;
+  top: 25%;
+  cursor: pointer;
+}
+.wrapper .series-wrapper .chapter-wrapper .process-div .fa-play-circle:hover {
+  color: rgba(211, 54, 54, 0.5);
 }
 .wrapper .series-wrapper .chapter-wrapper .process-div .process-grey {
   width: 100%;

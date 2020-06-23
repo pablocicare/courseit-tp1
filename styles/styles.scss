@@ -7,6 +7,8 @@
 
 body {
     background-color: #000000;
+    font-family: 'Open Sans', sans-serif;
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -14,19 +16,41 @@ body {
 .wrapper {
     width: 100%;
     height: auto;
-    font-family: 'Open Sans', sans-serif;
 
     .content {
         padding-left: 13px;
+        
+        @media screen and (min-width: 992px) {
+            padding-left: 81px;
+        }
     }
-
+    
     .content-titles {
         font-size: 18px;
         font-weight: bold;
         line-height: 25px;
+
+        @media screen and (min-width: 992px) {
+            font-size: 28px;
+            line-height: 38px;
+        }
     }
 
     .hero-wrapper {
+        @media screen and (min-width: 992px) {
+            height: 844px;
+
+            .header {
+                .toggle-btn {
+                    display: none;
+                }
+    
+                .menu-mobile {
+                    display: none;
+                }
+            }
+        }
+
         height: 344px;
         background-image: url(../assets/BlackSummer-main.png);
         background-position: center;
@@ -43,6 +67,23 @@ body {
             align-items: center;
             background-color: rgba(0, 0, 0, 0.801218);
     
+            .toggle-btn {
+                position: absolute;
+                left: 13px;
+                cursor: pointer;
+
+                &.active {
+                    left: 13px;
+                }
+
+                .hamburger-icon {
+                    width: 35px;
+                    text-align: center;
+                    font-size: 30px;
+                }
+
+            }
+
             .menu-mobile {            
                 height: 100vh;
                 width: 100%;
@@ -51,27 +92,12 @@ body {
                 position: fixed;
                 top: 4.03em;
                 left: -218px;
+                transition: all 400ms;
 
                 &.active {
                     left: 0;
                 }
     
-                .toggle-btn {
-                    position: absolute;
-                    top: -53px;
-                    left: 231px;
-                    cursor: pointer;
-
-                    &.active {
-                        left: 20px;
-                    }
-
-                    .hamburger-icon {
-                        width: 35px;
-                        text-align: center;
-                        font-size: 30px;
-                    }
-                }
     
                 .menu-li {
                     padding: 24px 0 0 13px;
@@ -97,7 +123,8 @@ body {
             
             .header-content {
                 width: 100%;
-                max-width: 80%;
+                display: flex;
+                align-items: center;
                 
                 .logo-wrapper {
                     height: 0;
@@ -113,6 +140,33 @@ body {
                 
                 .menu-desktop {
                     display: none;
+
+                }
+            }
+
+            @media screen and (min-width: 992px) {
+                .header-content {
+                    
+                    .logo-wrapper {
+                        padding-left: 85px;
+                        
+                        .logo-img {
+                            width: 9.25em;
+                        }
+                    }
+
+                    .menu-desktop {
+                        display: flex;
+                        padding-left: 87px;
+
+                        .nav-link {
+                            text-decoration: none;
+                            padding-right: 27px;
+                            font-size: 18px;
+                            line-height: 29px;
+
+                        }
+                    }
                 }
             }
         }
@@ -120,14 +174,45 @@ body {
         .hero-content {
             padding-top: 153px;
 
+            @media screen and (min-width: 992px) {
+                padding-top: 207px;
+                width: 100%;
+                max-width: 70%;
+            }
+
+            .subs-wrapper {
+                @media screen and (min-width: 992px) {
+                    padding-top: 40px;
+                    width: 100%;
+                    max-width: 70%;
+
+                    .dsk-subtitles {
+                        font-size: 24px;
+                        line-height: 33px;
+                        padding-bottom: 10px;
+                        font-weight: normal;
+                    }
+                }
+            }
+            
             .main-title {
                 font-size: 1.5em;
                 font-weight: bold;
                 line-height: 33px;
                 letter-spacing: 0.5px;
+                
+                @media screen and (min-width: 992px) {
+                    font-size: 120px;
+                    line-height: 100px;
+                    padding-top: 18px;
+                }
             }
             
             .subtitle {
+                @media screen and (min-width: 992px) {
+                    display: none;
+                }
+
                 font-size: 1em;
                 line-height: 22px;
                 font-weight: 400;
@@ -148,6 +233,11 @@ body {
             
             .dsk-titles {
                 display: none;
+                
+                @media screen and (min-width: 992px) {
+                    display: inline-block;
+                }
+                
             }
             
             .btn-wrapper {
@@ -160,6 +250,11 @@ body {
                     line-height: 22px;
                     font-weight: bold;
                     text-decoration: none;
+
+                    @media screen and (min-width: 992px) {
+                        font-size: 21px;
+                        line-height: 29px;
+                    }
                     
                     &.play-btn {
                         background-color: #ed0a1d;
@@ -188,11 +283,19 @@ body {
         width: 100%;
         background: linear-gradient(0deg, black 36%, rgba(0, 0, 0, 0) 100%);;
         margin-top: -70px;
+
+        @media screen and (min-width: 992px) {
+            margin-top: -210px;
+        }
     }
     
     .series-wrapper {
         background-color: #000000;
         margin-top: -70px;
+
+        @media screen and (min-width: 992px) {
+            margin-top: 22px;
+        }
         
         .carousel-wrapper {
 
@@ -208,23 +311,38 @@ body {
                 display: flex;
                 overflow-x: auto;
                 scroll-snap-type: x mandatory;
+                overflow-y: hidden;
                 
                 &::-webkit-scrollbar {
                     display: none;
                 }
-
-                
                 
                 .serie-div {
                     scroll-snap-align: start;
                     text-align: center;
                     margin-right: 13px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    transition: 0.3s ease all;
 
+                    @media screen and (min-width: 992px) {
+                        padding-bottom: 40px;
+                    }
+
+                    &:hover {
+                        transform: scale(1.2);
+                        transform-origin: center;
+                    }
+                    
                     .serie-link {
                         
                         .serie-img {
                             height: 124px;
                             width: auto;
+
+                            @media screen and (min-width: 992px) {
+                                height: 192px;
+                            }
                         }
                     }
                     
