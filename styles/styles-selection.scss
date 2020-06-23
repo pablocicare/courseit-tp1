@@ -381,8 +381,15 @@ body {
             align-items: flex-start;;
             padding-right: 22px;
             line-height: 1.4em;
-            padding-bottom: 15px;
+            padding-bottom: 30px;
             
+            &:hover {
+                .process-div{
+                    .fa-play-circle{
+                        color: rgba(211, 54, 54, 0.5);
+                    }
+                }
+            }
             .process-div {
                 display: flex;
                 flex-direction: column;
@@ -398,9 +405,6 @@ body {
                     top: 25%;
                     cursor: pointer;
 
-                    &:hover {
-                        color: rgba(211, 54, 54, 0.5);
-                    }
 
                     @media screen and (min-width: 992px) {
                         font-size: 100px;

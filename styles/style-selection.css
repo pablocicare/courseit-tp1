@@ -330,7 +330,10 @@ body::-webkit-scrollbar {
   align-items: flex-start;
   padding-right: 22px;
   line-height: 1.4em;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
+}
+.wrapper .series-wrapper .chapter-wrapper:hover .process-div .fa-play-circle {
+  color: rgba(211, 54, 54, 0.5);
 }
 .wrapper .series-wrapper .chapter-wrapper .process-div {
   display: flex;
@@ -346,9 +349,6 @@ body::-webkit-scrollbar {
   font-weight: 100;
   top: 25%;
   cursor: pointer;
-}
-.wrapper .series-wrapper .chapter-wrapper .process-div .fa-play-circle:hover {
-  color: rgba(211, 54, 54, 0.5);
 }
 @media screen and (min-width: 992px) {
   .wrapper .series-wrapper .chapter-wrapper .process-div .fa-play-circle {

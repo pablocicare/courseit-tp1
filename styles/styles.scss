@@ -4,9 +4,12 @@
     padding: 0;
     color: #ffffff;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    background-color: #000000;
+    background-color: #3d3d3d;
     font-family: 'Open Sans', sans-serif;
 
     &::-webkit-scrollbar {
@@ -52,7 +55,7 @@ body {
         }
 
         height: 344px;
-        background-image: url(../assets/BlackSummer-main.png);
+        background-image: url(../assets/bettercall-hero.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -260,6 +263,11 @@ body {
                         background-color: #ed0a1d;
                         margin-right: 4px;
                         
+                        .fa-play {
+                            color: #ffffff;
+                            padding-right: 8px;
+                        }
+                        
                         &:hover {
                             background-color: #d6091a;
                         }
@@ -282,19 +290,19 @@ body {
         height: 107px;
         width: 100%;
         background: linear-gradient(0deg, black 36%, rgba(0, 0, 0, 0) 100%);;
-        margin-top: -70px;
+        margin-top: -72px;
 
         @media screen and (min-width: 992px) {
-            margin-top: -210px;
+            margin-top: -160px;
         }
     }
     
     .series-wrapper {
         background-color: #000000;
-        margin-top: -70px;
+        margin-top: -30px;
 
         @media screen and (min-width: 992px) {
-            margin-top: 22px;
+            margin-top: 0;
         }
         
         .carousel-wrapper {
