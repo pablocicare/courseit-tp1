@@ -5,10 +5,6 @@
   color: #ffffff;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: #3d3d3d;
   font-family: "Open Sans", sans-serif;
@@ -151,7 +147,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (min-width: 992px) {
   .wrapper .hero-wrapper .hero-content {
-    padding-top: 207px;
+    padding-top: 142px;
     width: 100%;
     max-width: 70%;
   }
@@ -253,7 +249,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (min-width: 992px) {
   .wrapper .rectangle {
-    margin-top: -160px;
+    margin-top: -200px;
   }
 }
 .wrapper .series-wrapper {
@@ -271,17 +267,7 @@ body::-webkit-scrollbar {
 .wrapper .series-wrapper .carousel-wrapper .series-title {
   padding: 25px 0 15px;
 }
-.wrapper .series-wrapper .carousel-wrapper .carousel-series {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  overflow-y: hidden;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series::-webkit-scrollbar {
-  display: none;
-}
 .wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div {
-  scroll-snap-align: start;
   text-align: center;
   margin-right: 13px;
   padding-top: 20px;
@@ -293,10 +279,6 @@ body::-webkit-scrollbar {
     padding-bottom: 40px;
   }
 }
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div:hover {
-  transform: scale(1.2);
-  transform-origin: center;
-}
 .wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div .serie-link .serie-img {
   height: 124px;
   width: auto;
@@ -305,43 +287,6 @@ body::-webkit-scrollbar {
   .wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div .serie-link .serie-img {
     height: 192px;
   }
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey {
-  width: 100%;
-  max-width: 95%;
-  height: 3px;
-  margin-top: 10px;
-  background-color: #858585;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red {
-  height: 3px;
-  background-color: #C60F0E;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-1 {
-  width: 60%;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-2 {
-  width: 10%;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-3 {
-  width: 50%;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-4 {
-  width: 70%;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-5 {
-  width: 30%;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-6 {
-  width: 80%;
-}
-.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-7 {
-  width: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */
