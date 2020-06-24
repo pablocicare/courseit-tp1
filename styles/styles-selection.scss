@@ -1,3 +1,5 @@
+@import "reset.css";
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -347,32 +349,29 @@ body {
 
     .series-wrapper {
         @media screen and (min-width: 992px) {
-            margin: -50px 0 0 81px;
+            margin: -50px 0 0 0;
             padding-bottom: 100px;
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            overflow-y: hidden;
+            // display: flex;
+            // overflow-x: auto;
+            // scroll-snap-type: x mandatory;
+            // overflow-y: hidden;
 
-            &::-webkit-scrollbar {
-                display: none;
-            }
+            // &::-webkit-scrollbar {
+            //     display: none;
+            // }
 
             .season-title {
                 display: inline-block;
             }
 
             .chapter-wrapper {
-                align-items: center;
-                flex-direction: column;
-                scroll-snap-align: start;
+                // align-items: center;
+                // flex-direction: column;
+                // scroll-snap-align: start;
+                // width: 100%;
+                // max-width: 30%;
                 transition: 0.3s ease all;
-                padding: 40px 0;
-
-                &:hover {
-                    transform: scale(1.2);
-                    transform-origin: center;
-                }
+                padding: 40px 0;        
             }
         }
 
@@ -383,14 +382,16 @@ body {
             line-height: 1.4em;
             padding-bottom: 30px;
             
+            
             &:hover {
                 .process-div{
                     .fa-play-circle{
-                        color: rgba(211, 54, 54, 0.5);
+                        color:rgba(255, 255, 255, 0.541) ;
                     }
                 }
             }
             .process-div {
+                
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -399,7 +400,7 @@ body {
 
                 .fa-play-circle {
                     position: absolute;
-                    color: rgba(255, 255, 255, 0.541);
+                    color: rgba(196, 196, 196, 0.5);
                     font-size: 40px;
                     font-weight: 100;
                     top: 25%;
@@ -455,13 +456,14 @@ body {
                 }
 
                 @media screen and (min-width: 992px) {
-                    margin-top: 30px;
-
+                    margin-top: 30px;                    
+                    
                     .chapter-title {
                         font-size: 18px;
                     }
-
+                    
                     .chapter-desc {
+                        display: none;
                         font-size: 17px;
                     }
                 }

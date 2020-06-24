@@ -1,3 +1,4 @@
+@import "reset.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,13 +27,13 @@ body::-webkit-scrollbar {
   }
 }
 .wrapper .content-titles {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: bold;
   line-height: 25px;
 }
 @media screen and (min-width: 992px) {
   .wrapper .content-titles {
-    font-size: 28px;
+    font-size: 1.75em;
     line-height: 38px;
   }
 }
@@ -55,7 +56,7 @@ body::-webkit-scrollbar {
   }
 }
 .wrapper .hero-wrapper .header {
-  height: 4.063em;
+  height: 65px;
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -83,7 +84,7 @@ body::-webkit-scrollbar {
   max-width: 218px;
   background-color: black;
   position: fixed;
-  top: 4.03em;
+  top: 64px;
   left: -218px;
   transition: all 400ms;
 }
@@ -138,7 +139,7 @@ body::-webkit-scrollbar {
   .wrapper .hero-wrapper .header .header-content .menu-desktop .nav-link {
     text-decoration: none;
     padding-right: 27px;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 29px;
   }
 }
@@ -159,7 +160,7 @@ body::-webkit-scrollbar {
     max-width: 70%;
   }
   .wrapper .hero-wrapper .hero-content .subs-wrapper .dsk-subtitles {
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 33px;
     padding-bottom: 10px;
     font-weight: normal;
@@ -173,7 +174,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (min-width: 992px) {
   .wrapper .hero-wrapper .hero-content .main-title {
-    font-size: 120px;
+    font-size: 7.5em;
     line-height: 100px;
     padding-top: 18px;
   }
@@ -213,7 +214,7 @@ body::-webkit-scrollbar {
 .wrapper .hero-wrapper .hero-content .btn-wrapper .main-button {
   padding: 14px 22px;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 22px;
   font-weight: bold;
   text-decoration: none;
@@ -261,9 +262,6 @@ body::-webkit-scrollbar {
     margin-top: 0;
   }
 }
-.wrapper .series-wrapper .carousel-wrapper:last-child {
-  margin-bottom: 35px;
-}
 .wrapper .series-wrapper .carousel-wrapper .series-title {
   padding: 25px 0 15px;
 }
@@ -287,6 +285,43 @@ body::-webkit-scrollbar {
   .wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div .serie-link .serie-img {
     height: 192px;
   }
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey {
+  width: 100%;
+  max-width: 95%;
+  height: 3px;
+  margin-top: 10px;
+  background-color: #858585;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red {
+  height: 3px;
+  background-color: #C60F0E;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-1 {
+  width: 60%;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-2 {
+  width: 10%;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-3 {
+  width: 50%;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-4 {
+  width: 70%;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-5 {
+  width: 30%;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-6 {
+  width: 80%;
+}
+.wrapper .series-wrapper .carousel-wrapper .carousel-series .serie-div.process-div .process-grey .process-red.red-7 {
+  width: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */

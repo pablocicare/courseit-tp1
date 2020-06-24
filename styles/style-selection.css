@@ -1,3 +1,4 @@
+@import "reset.css";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -300,29 +301,15 @@ body::-webkit-scrollbar {
 }
 @media screen and (min-width: 992px) {
   .wrapper .series-wrapper {
-    margin: -50px 0 0 81px;
+    margin: -50px 0 0 0;
     padding-bottom: 100px;
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    overflow-y: hidden;
-  }
-  .wrapper .series-wrapper::-webkit-scrollbar {
-    display: none;
   }
   .wrapper .series-wrapper .season-title {
     display: inline-block;
   }
   .wrapper .series-wrapper .chapter-wrapper {
-    align-items: center;
-    flex-direction: column;
-    scroll-snap-align: start;
     transition: 0.3s ease all;
     padding: 40px 0;
-  }
-  .wrapper .series-wrapper .chapter-wrapper:hover {
-    transform: scale(1.2);
-    transform-origin: center;
   }
 }
 .wrapper .series-wrapper .chapter-wrapper {
@@ -333,7 +320,7 @@ body::-webkit-scrollbar {
   padding-bottom: 30px;
 }
 .wrapper .series-wrapper .chapter-wrapper:hover .process-div .fa-play-circle {
-  color: rgba(211, 54, 54, 0.5);
+  color: rgba(255, 255, 255, 0.541);
 }
 .wrapper .series-wrapper .chapter-wrapper .process-div {
   display: flex;
@@ -344,7 +331,7 @@ body::-webkit-scrollbar {
 }
 .wrapper .series-wrapper .chapter-wrapper .process-div .fa-play-circle {
   position: absolute;
-  color: rgba(255, 255, 255, 0.541);
+  color: rgba(196, 196, 196, 0.5);
   font-size: 40px;
   font-weight: 100;
   top: 25%;
@@ -399,6 +386,7 @@ body::-webkit-scrollbar {
     font-size: 18px;
   }
   .wrapper .series-wrapper .chapter-wrapper .chapter-info .chapter-desc {
+    display: none;
     font-size: 17px;
   }
 }
