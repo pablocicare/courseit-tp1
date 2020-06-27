@@ -5,10 +5,10 @@ btnToggle.addEventListener('click', function() {
     document.querySelector('.menu-mobile').classList.toggle('active');
 });
 
-btnActive.addEventListener('click', function() {
-    document.querySelector('.menu-mobile').classList.remove('active');
-    console.log("click")
-});
+// btnActive.addEventListener('click', function() {
+//     document.querySelector('.menu-mobile').classList.remove('active');
+//     console.log("click")
+// });
 
 $(document).ready(function(){
 
@@ -46,7 +46,6 @@ $(document).ready(function(){
         //   // instead of a settings object
         // ]
       });
-
   });
 
   
