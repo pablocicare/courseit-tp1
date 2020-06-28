@@ -19,6 +19,92 @@ body {
     width: 100%;
     height: auto;
 
+    .header {
+        background-color: rgba(0, 0, 0, 0.801218);
+        height: 65px;
+        padding: 0 13px;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        display: flex;
+        align-items: center;
+
+        .toggle-btn {
+            padding: 0;
+            border: 0;
+            width: 35px;
+            background-color: transparent;
+            font-size: 2em;
+            color: #ffffff;
+            align-items: center;
+            justify-content: center;
+            display: inline-flex;
+
+            &:hover {
+                color: #ed0a1d;
+            }
+
+            @media screen and (min-width: 992px) {
+                display: none;
+            }
+        }
+
+        .logo-link {
+            padding-left: 37px;
+
+            .logo-img {
+                width: 8.12em;
+            }
+        }
+
+        .nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            max-width: 218px;
+            background-color: #000000;
+            flex-direction: column;
+
+            &.open {
+                display: inline-flex;
+            }
+
+            .nav-link {
+                padding: 24px 0 0 13px;
+                text-decoration: none;
+                font-size: 1em;
+                line-height: 35px;
+                cursor: pointer;
+
+                &:hover {
+                    font-weight: bold;
+                }
+            }
+
+            @media screen and (min-width: 992px) {
+                display: inline-flex;
+                flex-direction: row;
+                position: unset;
+                height: auto;
+                max-width: 100%;
+                background-color: transparent;
+                padding-left: 87px;
+                // padding: ;
+
+                .nav-link {
+                    padding: 0 27px 0 0;
+                    font-size: 1.125em;
+                    line-height: 29px;
+                }
+            }
+
+        }
+    }
+
     .content {
         padding-left: 13px;
         
@@ -42,15 +128,15 @@ body {
         @media screen and (min-width: 992px) {
             height: 844px;
 
-            .header {
-                .toggle-btn {
-                    display: none;
-                }
+            // .header {
+            //     .toggle-btn {
+            //         display: none;
+            //     }
     
-                .menu-mobile {
-                    display: none;
-                }
-            }
+            //     .menu-mobile {
+            //         display: none;
+            //     }
+            // }
         }
 
         height: 344px;
@@ -59,119 +145,119 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         
-        .header {
-            height: 65px;
-            width: 100%;
-            position: fixed;
-            z-index: 1000;
-            top: 0;
-            display: flex;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.801218);
+        // .header {
+        //     height: 65px;
+        //     width: 100%;
+        //     position: fixed;
+        //     z-index: 1000;
+        //     top: 0;
+        //     display: flex;
+        //     align-items: center;
+        //     background-color: rgba(0, 0, 0, 0.801218);
     
-            .toggle-btn {
-                position: absolute;
-                left: 13px;
-                cursor: pointer;
+        //     .toggle-btn {
+        //         position: absolute;
+        //         left: 13px;
+        //         cursor: pointer;
 
-                &.active {
-                    left: 13px;
-                }
+        //         &.active {
+        //             left: 13px;
+        //         }
 
-                .hamburger-icon {
-                    width: 35px;
-                    text-align: center;
-                    font-size: 30px;
-                }
+        //         .hamburger-icon {
+        //             width: 35px;
+        //             text-align: center;
+        //             font-size: 30px;
+        //         }
 
-            }
+        //     }
 
-            .menu-mobile {            
-                height: 100vh;
-                width: 100%;
-                max-width: 218px;
-                background-color: black;
-                position: fixed;
-                top: 64px;
-                left: -218px;
-                transition: all 400ms;
+        //     .menu-mobile {            
+        //         height: 100vh;
+        //         width: 100%;
+        //         max-width: 218px;
+        //         background-color: black;
+        //         position: fixed;
+        //         top: 64px;
+        //         left: -218px;
+        //         transition: all 400ms;
 
-                &.active {
-                    left: 0;
-                }
+        //         &.active {
+        //             left: 0;
+        //         }
     
     
-                .menu-li {
-                    padding: 24px 0 0 13px;
-                    list-style: none;
+        //         .menu-li {
+        //             padding: 24px 0 0 13px;
+        //             list-style: none;
 
                     
-                    li {
-                        padding-bottom: 20px;
+        //             li {
+        //                 padding-bottom: 20px;
                         
-                        a {
-                            text-decoration: none;
-                            font-size: 1em;
-                            line-height: 35px;
-                            cursor: pointer;
+        //                 a {
+        //                     text-decoration: none;
+        //                     font-size: 1em;
+        //                     line-height: 35px;
+        //                     cursor: pointer;
                             
-                            &:hover {
-                                font-weight: bold;
-                            }
-                        }    
-                    }
-                }
-            }
+        //                     &:hover {
+        //                         font-weight: bold;
+        //                     }
+        //                 }    
+        //             }
+        //         }
+        //     }
             
-            .header-content {
-                width: 100%;
-                display: flex;
-                align-items: center;
+        //     .header-content {
+        //         width: 100%;
+        //         display: flex;
+        //         align-items: center;
                 
-                .logo-wrapper {
-                    height: 0;
-                    display: flex;
-                    align-items: center;
-                    padding-left: 68px;
+        //         .logo-wrapper {
+        //             height: 0;
+        //             display: flex;
+        //             align-items: center;
+        //             padding-left: 68px;
                     
-                    .logo-img {
-                        width: 8.12em;
-                        height: auto;
-                    }
-                }
+        //             .logo-img {
+        //                 width: 8.12em;
+        //                 height: auto;
+        //             }
+        //         }
                 
-                .menu-desktop {
-                    display: none;
+        //         .menu-desktop {
+        //             display: none;
 
-                }
-            }
+        //         }
+        //     }
 
-            @media screen and (min-width: 992px) {
-                .header-content {
+        //     @media screen and (min-width: 992px) {
+        //         .header-content {
                     
-                    .logo-wrapper {
-                        padding-left: 85px;
+        //             .logo-wrapper {
+        //                 padding-left: 85px;
                         
-                        .logo-img {
-                            width: 9.25em;
-                        }
-                    }
+        //                 .logo-img {
+        //                     width: 9.25em;
+        //                 }
+        //             }
 
-                    .menu-desktop {
-                        display: flex;
-                        padding-left: 87px;
+        //             .menu-desktop {
+        //                 display: flex;
+        //                 padding-left: 87px;
 
-                        .nav-link {
-                            text-decoration: none;
-                            padding-right: 27px;
-                            font-size: 1.125em;
-                            line-height: 29px;
+        //                 .nav-link {
+        //                     text-decoration: none;
+        //                     padding-right: 27px;
+        //                     font-size: 1.125em;
+        //                     line-height: 29px;
 
-                        }
-                    }
-                }
-            }
-        }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
         
         .hero-content {
             padding-top: 153px;
