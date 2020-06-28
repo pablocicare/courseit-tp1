@@ -53,6 +53,10 @@ body {
         .logo-link {
             padding-left: 37px;
 
+            @media screen and (min-width: 992px) {
+                padding-left: 68px;
+             }
+
             .logo-img {
                 width: 8.12em;
             }

@@ -53,6 +53,10 @@ body {
         .logo-link {
             padding-left: 37px;
 
+            @media screen and (min-width: 992px) {
+               padding-left: 68px;
+            }
+
             .logo-img {
                 width: 8.12em;
             }
@@ -265,7 +269,13 @@ body {
             margin-top: 0;
         }
         
+        
         .carousel-wrapper {
+            
+            .hyperlink {
+                position: relative;
+                bottom: 50px;
+            }
 
             // &:last-child {
             //     margin-bottom: 35px;

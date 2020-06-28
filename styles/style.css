@@ -51,6 +51,11 @@ body::-webkit-scrollbar {
 .wrapper .header .logo-link {
   padding-left: 37px;
 }
+@media screen and (min-width: 992px) {
+  .wrapper .header .logo-link {
+    padding-left: 68px;
+  }
+}
 .wrapper .header .logo-link .logo-img {
   width: 8.12em;
 }
@@ -243,6 +248,10 @@ body::-webkit-scrollbar {
   .wrapper .series-wrapper {
     margin-top: 0;
   }
+}
+.wrapper .series-wrapper .carousel-wrapper .hyperlink {
+  position: relative;
+  bottom: 50px;
 }
 .wrapper .series-wrapper .carousel-wrapper .series-title {
   padding: 25px 0 15px;

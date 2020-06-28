@@ -1,6 +1,9 @@
 const menuButton = document.querySelector(".js-toggle-btn");
 const nav = document.querySelector(".js-nav");
 const links = document.querySelectorAll(".js-nav-link");
+//con querySelectorAll no se pueden usar eventos porque se forma un array con varios elementos a los que habría
+//que darles un evento a cada uno.
+//para eso se usa el forEach que hace un bucle
 
 // Eventos
 menuButton.onclick = function (e) {
