@@ -25,7 +25,7 @@ menuButton.onclick = function (e) {
   // Funciones
   function toggleMenu () {
     nav.classList.toggle("open");
-  }
+  };
 
 
 $(document).ready(function(){

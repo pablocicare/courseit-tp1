@@ -10,11 +10,11 @@ menuButton.onclick = function (e) {
   
   nav.onclick = function (e) {
     e.stopPropagation();
-  }
+  };
   
   document.body.onclick = function () {
     nav.classList.remove("open");
-  }
+  };
   
   links.forEach(function (link) {
     link.onclick = function () {
@@ -25,7 +25,7 @@ menuButton.onclick = function (e) {
   // Funciones
   function toggleMenu () {
     nav.classList.toggle("open");
-  }
+  };
 
 
 
