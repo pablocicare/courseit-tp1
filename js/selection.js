@@ -1,14 +1,32 @@
-const btnToggle = document.querySelector('.toggle-btn');
-const btnActive = document.querySelector('.li-btn');
+const menuButton = document.querySelector(".js-toggle-btn");
+const nav = document.querySelector(".js-nav");
+const links = document.querySelectorAll(".js-nav-link");
 
-btnToggle.addEventListener('click', function() {
-    document.querySelector('.menu-mobile').classList.toggle('active');
-});
+// Eventos
+menuButton.onclick = function (e) {
+    e.stopPropagation();
+    toggleMenu();
+  };
+  
+  nav.onclick = function (e) {
+    e.stopPropagation();
+  }
+  
+  document.body.onclick = function () {
+    nav.classList.remove("open");
+  }
+  
+  links.forEach(function (link) {
+    link.onclick = function () {
+      nav.classList.remove("open");
+    }
+  });
+  
+  // Funciones
+  function toggleMenu () {
+    nav.classList.toggle("open");
+  }
 
-btnActive.addEventListener('click', function() {
-    document.querySelector('.menu-mobile').classList.remove('active');
-    console.log("click")
-});
 
 $(document).ready(function(){
 
